@@ -92,3 +92,8 @@ endif()
 
 include(cmake/Install.cmake)
 include(cmake/Packaging.cmake)
+
+install(
+    DIRECTORY include/
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
